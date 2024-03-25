@@ -1,21 +1,31 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #fffbee; /* light honey color background */
 }
 
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+/* Header Styles */
 header {
-    background-color: #f0db4f;
-    padding: 10px 0;
+    background-color: #f0db4f; /* honey yellow */
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #333;
+    text-align: center; /* Center nav items */
 }
 
 nav ul li {
@@ -29,13 +39,46 @@ nav ul li a {
     display: inline-block;
 }
 
-main {
-    padding: 15px;
+nav ul li a:hover {
+    background-color: #555; /* Darker shade for hover */
 }
 
+/* Main Content Styles */
+main {
+    padding: 15px;
+    background-color: #fffbee; /* light honey color background */
+    max-width: 1200px;
+    margin: 20px auto; /* Center the main content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
