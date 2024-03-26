@@ -81,37 +81,38 @@ main {
     align-items: center;
 }
 
-#about {
+#about-image {
     background-image: url('49bfe2a2669b4afbefb8ee67fe35ab2055843760_high.jpeg'); /* Replace with your actual image path */
 }
 
-#lifecycle {
+#lifecycle-image {
     background-image: url('HixjyeXYJCrSDVGkZTmprP-1200-80.jpg'); /* Replace with your actual image path */
 }
 
-#diversity {
-    background-image: url('diversity_bees.jpg'); /* Replace with your actual image path */
+#diversity-image {
+    background-image: url('path_to_diversity_image.jpg'); /* Replace with your image path */
 }
 
-#behavior {
-    background-image: url('behavior_bees.jpg'); /* Replace with your actual image path */
+#behavior-image {
+    background-image: url('path_to_behavior_image.jpg'); /* Replace with your image path */
 }
 
-#importance {
-    background-image: url('importance_bees.jpg'); /* Replace with your actual image path */
+#importance-image {
+    background-image: url('path_to_importance_image.jpg'); /* Replace with your image path */
 }
 
-#threats {
-    background-image: url('threats_bees.jpg'); /* Replace with your actual image path */
+#threats-image {
+    background-image: url('path_to_threats_image.jpg'); /* Replace with your image path */
 }
 
-#conservation {
-    background-image: url('conservation_bees.jpg'); /* Replace with your actual image path */
+#conservation-image {
+    background-image: url('path_to_conservation_image.jpg'); /* Replace with your image path */
 }
 
-#protection {
-    background-image: url('protection_bees.jpg'); /* Replace with your actual image path */
+#protection-image {
+    background-image: url('path_to_protection_image.jpg'); /* Replace with your image path */
 }
+
 
 /* Footer Styles */
 footer {
