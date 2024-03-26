@@ -15,12 +15,12 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-image: url('49bfe2a2669b4afbefb8ee67fe35ab2055843760_high.jpeg'); /* Add a background image */
+    background-image: url('49bfe2a2669b4afbefb8ee67fe35ab2055843760_high.jpeg'); /* Update with correct path */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 60px 0; /* Increased padding for more space */
 }
 .header-content {
     max-width: 1200px;
@@ -30,7 +30,7 @@ header {
 
 /* Sticky Navbar Styles */
 nav {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent black */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -39,50 +39,60 @@ nav {
     max-width: 1200px;
     margin: auto;
     padding: 10px;
+    text-align: center; /* Center navigation links */
 }
 nav ul {
     list-style-type: none;
-    overflow: hidden;
+    padding: 0;
 }
 nav ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust spacing as needed */
+    display: inline-block; /* Align links in a row */
+    margin: 0 10px;
 }
 nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a:focus {
     background-color: #555;
 }
 
 /* Main Content Styles */
 main .section-container {
-    padding: 50px 10px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 80px 10px; /* More padding for spacious layout */
+    text-align: center; /* Center-align text */
 }
-main section:nth-child(odd) {
-    background-color: #f0db4f; /* Alternating section background */
+main section {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 20px 0; /* Space between sections */
 }
+
+/* Parallax or Fixed Background for Each Section */
+section#about {
+    background-image: url('path-to-about-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* Add similar background styles for other sections */
 
 /* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul {
-        padding: 0;
-        text-align: center;
-    }
     nav ul li {
         display: block;
+        margin: 5px 0; /* Stack links vertically on smaller screens */
+    }
+    .header-content, .nav-wrapper, main .section-container {
+        padding: 20px;
     }
 }
