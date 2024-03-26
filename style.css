@@ -16,10 +16,9 @@ body {
     line-height: 1.6;
 }
 
-
 /* Header Styles */
 header {
-    background-color: #f6c745; /* Adjusted to a cool aqua color */
+    background-color: #f6c745;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -32,7 +31,7 @@ header {
 
 /* Sticky Navbar Styles */
 nav.sticky {
-    background-color: #fff; /* Changed to white for a clean look */
+    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -72,12 +71,46 @@ main {
 }
 
 .section-container {
-    padding: 1rem;
+    height: 100vh;
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Light grey background for sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    background-image: url('49bfe2a2669b4afbefb8ee67fe35ab2055843760_high.jpeg'); /* Replace with your actual image path */
+}
+
+#lifecycle {
+    background-image: url('HixjyeXYJCrSDVGkZTmprP-1200-80.jpg'); /* Replace with your actual image path */
+}
+
+#diversity {
+    background-image: url('diversity_bees.jpg'); /* Replace with your actual image path */
+}
+
+#behavior {
+    background-image: url('behavior_bees.jpg'); /* Replace with your actual image path */
+}
+
+#importance {
+    background-image: url('importance_bees.jpg'); /* Replace with your actual image path */
+}
+
+#threats {
+    background-image: url('threats_bees.jpg'); /* Replace with your actual image path */
+}
+
+#conservation {
+    background-image: url('conservation_bees.jpg'); /* Replace with your actual image path */
+}
+
+#protection {
+    background-image: url('protection_bees.jpg'); /* Replace with your actual image path */
 }
 
 /* Footer Styles */
