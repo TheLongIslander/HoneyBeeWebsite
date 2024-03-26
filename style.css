@@ -115,10 +115,7 @@ main {
 }
 
 #protection-image {
-    background-image: url('_104493752_c0240717-cape_honey_bee_on_coastal_ragwort-spl.jpg'); /* Replace with your image path */
-}
-#conservation-imagge {
-    background-image: url('8664.jpg');
+    background-image: url('8664.jpg'); /* Replace with your image path */
 }
 
 /* Footer Styles */
