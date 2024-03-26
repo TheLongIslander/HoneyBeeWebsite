@@ -11,14 +11,14 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff; /* Changed to pure white for a clean look */
+    background-color: #fff; /* Pure white for a clean look */
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background-color: #49bfe2; /* Adjusted to a cool aqua color */
+    background-color: #49bfe2; /* Cool aqua color */
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -26,7 +26,7 @@ header {
 
 .header-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Non-Sticky Navbar Styles */
@@ -35,10 +35,9 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .nav-wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0.5rem;
 }
 
@@ -69,12 +68,28 @@ main {
 }
 
 .section-container {
+    position: relative;
     padding: 1rem;
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: #f9f9f9; /* Light grey background for sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: #f9f9f9; /* Light grey as fallback */
     margin-bottom: 2rem;
+    overflow: hidden; /* Ensure no content overflows the diagonal */
+}
+
+.section-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(120deg, #49bfe2 50%, #f9f9f9 50%); /* Diagonal split */
+    z-index: -1;
+}
+
+.section-container:nth-child(even)::before {
+    background: linear-gradient(120deg, #f9f9f9 50%, #49bfe2 50%); /* Inverted diagonal split for even sections */
 }
 
 /* Footer Styles */
