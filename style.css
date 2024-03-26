@@ -13,13 +13,16 @@
     font-family: 'SecondCustomFontName'; /* A different name for the new font */
     src: url('Summerbee-vmgjD.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'MyCustomFontFamily';
+    src: url('Rockwell.ttc') format('truetype-collection');
+}
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+     font-family: 'CustomFontName', Arial, sans-serif;
     background-image: linear-gradient(45deg, #f6c745 50%, #000000 50%);
     color: #333;
     line-height: 1.6;
