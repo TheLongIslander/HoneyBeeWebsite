@@ -11,12 +11,11 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    background-image: linear-gradient(45deg, #f9f9f9 25%, #49bfe2 25%, #49bfe2 50%, #f9f9f9 50%, #f9f9f9 75%, #49bfe2 75%, #49bfe2 100%);
-    background-size: 100px 100px;
+    background-image: linear-gradient(to bottom right, #f6c745, #e0e0e0);
     color: #333;
     line-height: 1.6;
 }
+
 
 /* Header Styles */
 header {
