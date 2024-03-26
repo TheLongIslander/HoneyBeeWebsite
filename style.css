@@ -9,6 +9,10 @@
     font-family: 'CustomFontName'; /* You can name it as you like */
     src: url('HoneycombHappiness-ywnRm.ttf') format('truetype'); /* Update with the correct path */
 }
+@font-face {
+    font-family: 'SecondCustomFontName'; /* A different name for the new font */
+    src: url('Summerbee-vmgjD.ttf') format('truetype');
+}
 
 html {
     scroll-behavior: smooth;
@@ -87,6 +91,10 @@ main {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: to add some depth */
     /* Rest of your styles */
+}
+.section-container h2 {
+    font-family: 'SecondCustomFontName', Arial, sans-serif; /* Custom font for subtitles */
+    /* Additional styling for subtitles */
 }
 /* Fullscreen image styles */
 .full-image {
