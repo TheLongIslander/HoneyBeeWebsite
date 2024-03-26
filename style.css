@@ -11,6 +11,8 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #49bfe2 50%, #fffbee 50%);
+    min-height: 100vh;
     background-color: #fff; /* Changed to pure white for a clean look */
     color: #333;
     line-height: 1.6;
@@ -22,27 +24,48 @@ header {
     color: white;
     padding: 2rem 0;
     text-align: center;
+    padding: 40px 0;
 }
+.header-content h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Navigation Bar */
 /* Sticky Navbar Styles */
 nav.sticky {
+    background-color: rgba(255, 255, 255, 0.95);
     background-color: #fff; /* Changed to white for a clean look */
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* ... rest of your navigation styling ... */
 
+/* Main Content Styles */
+main .section-container {
+    padding: 50px 10px;
 .nav-wrapper {
     max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     padding: 0.5rem;
 }
+main .about {
+    background: none; /* No background for split effect */
+    padding: 80px 0; /* More vertical padding */
 
 nav ul {
     list-style-type: none;
@@ -55,9 +78,13 @@ nav ul li {
     margin: 0 20px;
 }
 
+/* Section Heading Styles */
+main h2 {
+    font-size: 2em;
 nav ul li a {
     text-decoration: none;
     color: #333;
+    margin-bottom: 20px;
     padding: 10px 15px;
 }
 
@@ -65,6 +92,10 @@ nav ul li a:hover, nav ul li a:focus {
     color: #49bfe2;
 }
 
+/* Paragraph Styles */
+main p {
+    font-size: 1.125em;
+    margin-bottom: 10px;
 /* Main Content Styles */
 main {
     padding: 3rem 0;
@@ -84,14 +115,18 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
+    padding: 20px 0;
     padding: 1rem 0;
     position: relative;
     bottom: 0;
     width: 100%;
 }
+/* ... rest of your footer styling ... */
 
+/* Responsive Styles */
 /* Responsive styling */
 @media (max-width: 768px) {
+    /* ... responsive styling ... */
     .nav-wrapper, .header-content, .section-container {
         padding: 1rem;
     }
