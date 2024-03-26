@@ -11,7 +11,9 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff; /* Changed to pure white for a clean look */
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #f9f9f9 25%, #49bfe2 25%, #49bfe2 50%, #f9f9f9 50%, #f9f9f9 75%, #49bfe2 75%, #49bfe2 100%);
+    background-size: 100px 100px;
     color: #333;
     line-height: 1.6;
 }
