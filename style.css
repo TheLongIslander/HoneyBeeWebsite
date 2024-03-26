@@ -4,85 +4,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #49bfe2 50%, #fffbee 50%);
+    min-height: 100vh;
     line-height: 1.6;
-    color: #333;
-    background-color: #fffbee; /* light honey color background */
 }
 
 /* Header Styles */
 header {
-    width: 100%;
-    padding: 40px 0;
     text-align: center;
-    background-color: #49bfe2; /* Cool aqua color */
-    color: #fff;
+    padding: 40px 0;
+}
+.header-content h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.header-content {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Sticky Navbar Styles */
+/* Navigation Bar */
 nav.sticky {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-.nav-wrapper {
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #49bfe2;
-}
+/* ... rest of your navigation styling ... */
 
 /* Main Content Styles */
 main .section-container {
-    padding: 80px 10px;
+    padding: 50px 10px;
     max-width: 1200px;
-    margin: auto;
-    background-color: #fff; /* White sections for clarity */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+main .about {
+    background: none; /* No background for split effect */
+    padding: 80px 0; /* More vertical padding */
 }
 
-/* Section Content */
-.content {
-    padding: 20px;
+/* Section Heading Styles */
+main h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-main section:nth-child(even) {
-    background-color: #eef6fc; /* Light blue for even sections */
+/* Paragraph Styles */
+main p {
+    font-size: 1.125em;
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -91,17 +70,13 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
+/* ... rest of your footer styling ... */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul {
-        padding: 0;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+    /* ... responsive styling ... */
 }
