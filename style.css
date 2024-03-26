@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Custom Font Face */
+@font-face {
+    font-family: 'CustomFontName'; /* You can name it as you like */
+    src: url('Summerbee-vmgjD.ttf') format('truetype'); /* Update with the correct path */
+}
 
 html {
     scroll-behavior: smooth;
@@ -18,7 +23,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #f6c745;
+    background-color: #f6c745; /* Same color for header */
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -28,6 +33,11 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
+.header-content h1 {
+    font-family: 'CustomFontName', Arial, sans-serif; /* Use the custom font here */
+    /* Other styles if needed */
+}
+
 
 /* Sticky Navbar Styles */
 nav.sticky {
